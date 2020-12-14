@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #4e4e4e;
+  font-weight: 300;
+  line-height: 1.75em;
+}
+
+.site-logo img {
+  width: 220px;
+}
+
+header {
+background-color:transparent;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+margin: auto;
+margin-top: 1.4em;
+}
+
+.main {
+z-index: 0;
+}
+
+.main-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.main-menu li {
+  padding: 0 12px;
+}
+
+.main-menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  padding-top: 2em;
+  margin-top: -2em;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+.main-menu li.active a  {
+  color: #FF5733;
+}
+
+.main-menu li a:hover { 
+  color: #FF5733;
+  border-color: #FF5733;
+  border-style: solid;
+  border-width: 4px 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: -1.6em;
+}
+
+.btn {
+    border: none;
+    padding: 0.65em 1.2em;;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 0 1em;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #FF5733;
+}
+
+.top-section {
+  background-image: url(images/about-banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-height: 350px;
+  width: 100%;
+}
+
+.background-overlay {
+  background-color: #000;
+  opacity: 0.6;
+  transition: background 0.3s,border-radius 0.3s,opacity 0.3s;
+}
+
+.background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.top-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 650px;
+}
+
+.top-section .container h1 {
+  position: relative;
+  z-index: 5;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 65px;
+  line-height: 1.18em;
+  display: block;
+  max-width: 700px;
+  margin-top: 2.2em;
+}
